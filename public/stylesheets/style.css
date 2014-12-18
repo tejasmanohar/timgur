@@ -23,7 +23,6 @@ body {
 h1 {
     font-size: 3em;
     font-family: 'Raleway', helvetica, sans-serif, georgia;
-    text-transform: uppercase;
     letter-spacing: 0.2em;
     border-bottom: 1px solid #333;
     padding: 0 0 1em;
@@ -49,7 +48,7 @@ a {
     text-decoration: none;
 }
 
-div#mc_embed_signup {
+div#embed_signup {
     width: 70%;
     max-width: 500px;
     margin: 0 auto;
@@ -58,7 +57,7 @@ div#mc_embed_signup {
     padding: 2em 2em;
     margin-top: 2em;
 }
-form#mc-embedded-subscribe-form {
+form#embedded-subscribe-form {
     display: block;
 }
 label {
@@ -68,7 +67,7 @@ label {
     line-height: 1.9em;
     margin-bottom: 1.2em;
 }
-input#mce-EMAIL {
+input#EMAIL {
     margin-top: 2em;
     margin-bottom: 2em;
     z-index: 2;
@@ -88,7 +87,7 @@ input#mce-EMAIL {
     display: inline-block;
 }
 
-input#mc-embedded-subscribe {
+input#embedded-subscribe {
     color: #fff;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -120,7 +119,7 @@ input#mc-embedded-subscribe {
     max-width: 60px;
 }
 
-input#mc-embedded-subscribe:hover {
+input#embedded-subscribe:hover {
     background: green;
 }
 
