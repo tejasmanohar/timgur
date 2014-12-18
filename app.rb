@@ -1,4 +1,4 @@
-require 'ruby-imgur'
+# require 'ruby-imgur'
 require 'sinatra'
 
 configure :development do
