@@ -5,6 +5,7 @@
 ruby '2.1.5'
 source 'https://rubygems.org'
 
+gem 'ruby-imgur',         '0.04'
 gem 'sinatra',            '1.4.5'
 
 group :development do
