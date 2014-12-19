@@ -18,7 +18,7 @@
             <label for="EMAIL">Receive top imgur post of the day via SMS!</label>
             <label>Sign up now to receive tomorrow's edition.</label>
             <form action="/subscribe" method="post" id="embedded-subscribe-form" name="embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <input type="tel" value="" name="number" class="email" id="EMAIL" placeholder="phone number" required>
+                <input type="tel" pattern="/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/" value="" name="number" class="email" id="EMAIL" placeholder="phone number" required>
                 <input type="submit" value="Go" name="subscribe" id="embedded-subscribe" class="button">
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_e6728b4299cef4104e10240b9_042ce2b6a7" tabindex="-1" value=""></div>
             </form>
