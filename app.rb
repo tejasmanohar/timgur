@@ -11,10 +11,14 @@ end
 
 ### API Clients
 app = Orchestrate::Application.new(ENV['API_KEY'])
-users = app[:users]
+users = app[:subscribers]
 client = Orchestrate::Client.new(ENV['API_KEY'])
 
 ### Routes
 get '/' do
   erb :home
+end
+
+post '/' do
+  # update orchestrate
 end
