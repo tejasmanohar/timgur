@@ -5,6 +5,7 @@
 ruby '2.1.5'
 source 'https://rubygems.org'
 
+gem 'orchestrate',        '0.10.0'
 gem 'ruby-imgur',         '0.04'
 gem 'sinatra',            '1.4.5'
 
