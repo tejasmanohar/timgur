@@ -19,6 +19,6 @@ get '/' do
   erb :home
 end
 
-post '/' do
+post '/subscribe' do
   subscribers[params[:number]][:phrase]
 end
