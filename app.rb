@@ -1,7 +1,6 @@
 ### Gems
 require 'imgur'
 require 'orchestrate'
-require 'phone'
 require 'sinatra'
 
 ### Environments
