@@ -1,6 +1,7 @@
 ### Gems
 require 'imgur'
 require 'orchestrate'
+require 'phone'
 require 'sinatra'
 
 ### Environments
@@ -21,11 +22,14 @@ get '/' do
 end
 
 post '/subscribe' do
-  if subscribers[params[:number]].nil?
-    status 200
-    subscribers.create(params[:number], { '' => '' })
-  else
-    status 400
-    'already subscribed'
+  num = params[:number]
+  if Phoner::Phone.valid? num
+    if subscribers[num].nil?
+      status 200
+      subscribers.create(num, { })
+    else
+      status 400
+      'already subscribed'
+    end
   end
 end
