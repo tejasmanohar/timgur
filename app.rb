@@ -20,5 +20,5 @@ get '/' do
 end
 
 post '/' do
-  # update orchestrate
+  subscribers[params[:number]][:phrase]
 end
