@@ -1,4 +1,5 @@
 # require 'ruby-imgur'
+require 'orchestrate'
 require 'sinatra'
 
 configure :development do
