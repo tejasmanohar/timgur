@@ -3,12 +3,13 @@ function hasHtml5Validation () {
 }
 
 if (hasHtml5Validation()) {
-  $('.validate').submit(function (e) {
+  $('.validate').ajaxForm(function(e) { 
     if (!this.checkValidity()) {
       e.preventDefault();
       $(this).addClass('invalid');
     } else {
       $(this).removeClass('invalid');
     }
+    alert("Thank you for subscribing!");
   });
 }
