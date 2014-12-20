@@ -21,14 +21,13 @@ get '/' do
 end
 
 post '/subscribe' do
-  num = params[:number]
-  if Phoner::Phone.valid? num
-    if subscribers[num].nil?
-      status 200
-      subscribers.create(num, { })
-    else
-      status 400
-      'already subscribed'
-    end
-  end
+  'request went through'
+  # num = params[:number]
+  # if subscribers[num].empty?
+  #   status 200
+  #   subscribers.create(num, {})
+  # else
+  #   status 400
+  #   'already subscribed'
+  # end
 end

@@ -20,7 +20,7 @@
       <label for="tagline">Receive top <a href="http://imgur.com/">imgur</a> post of the day via SMS!</label>
       <label>Sign up now to receive tomorrow's edition.</label>
       <form action="/subscribe" method="post" id="embedded-subscribe-form" class="validate">
-        <input type="tel" pattern="(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}" name="number" id="tagline" placeholder="phone number" required>
+        <input title="required input" pattern="(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}" name="number" id="tagline" placeholder="phone number" required>
         <input type="submit" value="Go" name="subscribe" id="embedded-subscribe" class="button">
       </form>
       <p class="small">No Ads. No Games. No Gimmicks.</p>
@@ -31,4 +31,6 @@
 
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </body>
+<script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/validation.js"></script>
 </html>
