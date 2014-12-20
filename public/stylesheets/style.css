@@ -2,130 +2,130 @@ html { overflow-y: hidden;
 }
 
 body {
-    background-color: #f8f8f8;
-    color: #222222;
-    font-family: 'Raleway', helvetica, sans-serif, georgia;
-    font-weight: 300;
+  background-color: #f8f8f8;
+  color: #222222;
+  font-family: 'Raleway', helvetica, sans-serif, georgia;
+  font-weight: 300;
 }
 
 .main {
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-    z-index: 300;
-    padding: 1em;
-    overflow: hidden;
-    width: 90%;
-    margin: 0 auto;
-    max-width: 700px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index: 300;
+  padding: 1em;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 h1 {
-    font-size: 3em;
-    font-family: 'Raleway', helvetica, sans-serif, georgia;
-    letter-spacing: 0.2em;
-    border-bottom: 1px solid #333;
-    padding: 0 0 1em;
+  font-size: 3em;
+  font-family: 'Raleway', helvetica, sans-serif, georgia;
+  letter-spacing: 0.2em;
+  border-bottom: 1px solid #333;
+  padding: 0 0 1em;
 }
 
 p {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 p.small {
-    font-size: 0.8em;
-    color: #AAAAAA;
+  font-size: 0.8em;
+  color: #AAAAAA;
 }
 
 p.name {
-    font-size: 1em;
-    margin-top: 5em;
-    color: rgba(0, 0, 0, 0.4);
+  font-size: 1em;
+  margin-top: 5em;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 a {
-    color: rgba(0, 0, 0, 0.6);
-    text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
 }
 
 div#embed_signup {
-    width: 70%;
-    max-width: 500px;
-    margin: 0 auto;
-    border-bottom: 1px solid #333;
-    border-radius: 0.5em;
-    padding: 2em 2em;
-    margin-top: 2em;
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-bottom: 1px solid #333;
+  border-radius: 0.5em;
+  padding: 2em 2em;
+  margin-top: 2em;
 }
 form#embedded-subscribe-form {
-    display: block;
+  display: block;
 }
 label {
-    display: block;
-    font-size: 1em;
-    color: #333;
-    line-height: 1.9em;
-    margin-bottom: 1.2em;
+  display: block;
+  font-size: 1em;
+  color: #333;
+  line-height: 1.9em;
+  margin-bottom: 1.2em;
 }
 input#EMAIL {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    z-index: 2;
-    font-size: 1em;
-    background: #fff;
-    border: 1px solid #999;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0px 1px 1px #ddd;
-    -moz-box-shadow: inset 0px 1px 1px #ddd;
-    padding: 8px;
-    -webkit-box-shadow: inset 0px 1px 1px #ddd;
-    width: 70%;
-    height: 3.5em;
-    max-width: 350px;
-    display: inline-block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  z-index: 2;
+  font-size: 1em;
+  background: #fff;
+  border: 1px solid #999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: inset 0px 1px 1px #ddd;
+  -moz-box-shadow: inset 0px 1px 1px #ddd;
+  padding: 8px;
+  -webkit-box-shadow: inset 0px 1px 1px #ddd;
+  width: 70%;
+  height: 3.5em;
+  max-width: 350px;
+  display: inline-block;
 }
 
 input#embedded-subscribe {
-    color: #fff;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    display: inline-block;
-    position: relative;
-    vertical-align: baseline;
-    font-size: inherit;
-    border: 1px solid black;
-    background: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-family: inherit;
-    width: 1;
-    overflow: visible;
-    background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#000000));
-    background-color: #000;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
-    box-shadow: inset 0 1px 0 #888888, 0 1px 0 rgba(0, 0, 0, 0.07);
-    -moz-box-shadow: inset 0 1px 0 #888888, 0 1px 0 rgba(0, 0, 0, 0.07);
-    -webkit-box-shadow: inset 0 1px 0 #888888, 0 1px 0 rgba(0, 0, 0, 0.07);
-    height: 3.5em;
-    border-radius: none;
-    -webkit-border-radius: none;
-    width: 20%;
-    max-width: 60px;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  vertical-align: baseline;
+  font-size: inherit;
+  border: 1px solid black;
+  background: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: inherit;
+  width: 1;
+  overflow: visible;
+  background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#000000));
+  background-color: #000;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0 1px 0 #888888, 0 1px 0 rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: inset 0 1px 0 #888888, 0 1px 0 rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: inset 0 1px 0 #888888, 0 1px 0 rgba(0, 0, 0, 0.07);
+  height: 3.5em;
+  border-radius: none;
+  -webkit-border-radius: none;
+  width: 20%;
+  max-width: 60px;
 }
 
 input#embedded-subscribe:hover {
-    background: green;
+  background: green;
 }
 
 
 .twitter-share-button {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
 }
