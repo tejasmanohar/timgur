@@ -4,14 +4,14 @@ require 'sinatra'
 require 'twilio'
 
 ### API Clients
-app = Orchestrate::Application.new(ENV['API_KEY'])
+app = Orchestrate::Application.new(ENV['ORCHESTRATE_API_KEY'])
 subscribers = app[:subscribers]
-client = Orchestrate::Client.new(ENV['API_KEY'])
+client = Orchestrate::Client.new(ENV['ORCHESTRATE_API_KEY'])
 
 ### Configure Twilio
 Twilio.configure do |config|
-  config.account_sid = ENV['ACCOUNT_SID']
-  config.auth_token = ENV['AUTH_TOKEN']
+  config.account_sid = ENV['TWILIO_ACCOUNT_SID']
+  config.auth_token = ENV['TWILIO_AUTH_TOKEN']
 end
 
 @twil = Twilio::REST::Client.new
