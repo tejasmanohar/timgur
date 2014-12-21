@@ -7,3 +7,4 @@ source 'https://rubygems.org'
 
 gem 'orchestrate',        '0.10.0'
 gem 'sinatra',            '1.4.5'
+gem 'twilio',             '3.1.1'
