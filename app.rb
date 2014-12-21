@@ -1,11 +1,20 @@
 ### Gems
 require 'orchestrate'
 require 'sinatra'
+require 'twilio'
 
 ### API Clients
 app = Orchestrate::Application.new(ENV['API_KEY'])
 subscribers = app[:subscribers]
 client = Orchestrate::Client.new(ENV['API_KEY'])
+
+### Configure Twilio
+Twilio.configure do |config|
+  config.account_sid = ENV['ACCOUNT_SID']
+  config.auth_token = ENV['AUTH_TOKEN']
+end
+
+@twil = Twilio::REST::Client.new
 
 ### Helper Methods
 helpers do
@@ -40,4 +49,18 @@ post '/subscribe' do
     status 400
     'already subscribed'
   end
+end
+
+get '/unsubscribe' do
+  if params[:Body].eql? 'unsubscribe'
+    status 200
+    doc = client.get(:subscribers, params[:From])
+    client.delete(:subscribers, params[:From], doc.ref)
+    @twil.messages.create(
+      from: ENV['TWILIO_NUMBER'],
+      to: params[:From],
+      body: 'You are now unsubscribed.'
+    )
+  else
+    status 400
 end
