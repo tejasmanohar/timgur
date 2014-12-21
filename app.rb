@@ -1,7 +1,7 @@
 ### Gems
 require 'orchestrate'
 require 'sinatra'
-require 'twilio'
+require 'twilio-ruby'
 
 ### API Clients
 app = Orchestrate::Application.new(ENV['ORCHESTRATE_API_KEY'])
