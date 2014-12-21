@@ -46,10 +46,6 @@ post '/subscribe' do
   if subscribers[num].nil?
     status 200
     subscribers.create(num, {})
-    'subscribed'
-  else
-    status 400
-    'already subscribed'
   end
 end
 
