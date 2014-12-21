@@ -3,10 +3,12 @@ require 'orchestrate'
 require 'sinatra'
 require 'twilio-ruby'
 
+
 ### API Clients
 app = Orchestrate::Application.new(ENV['ORCHESTRATE_API_KEY'])
 subscribers = app[:subscribers]
 client = Orchestrate::Client.new(ENV['ORCHESTRATE_API_KEY'])
+
 
 ### Configure Twilio
 Twilio.configure do |config|
@@ -14,7 +16,6 @@ Twilio.configure do |config|
   config.auth_token = ENV['TWILIO_AUTH_TOKEN']
 end
 
-@twil = Twilio::REST::Client.new
 
 ### Helper Methods
 helpers do
@@ -32,6 +33,7 @@ helpers do
     end
   end
 end
+
 
 ### Routes
 get '/' do
@@ -51,11 +53,13 @@ post '/subscribe' do
   end
 end
 
-get '/unsubscribe' do
+get '/receive' do
+  @twil = Twilio::REST::Client.new
   if params[:Body].eql? 'unsubscribe'
     status 200
-    doc = client.get(:subscribers, params[:From])
-    client.delete(:subscribers, params[:From], doc.ref)
+    num = format_number(params[:From])
+    doc = client.get(:subscribers, num)
+    client.delete(:subscribers, num, doc.ref)
     @twil.messages.create(
       from: ENV['TWILIO_NUMBER'],
       to: params[:From],
