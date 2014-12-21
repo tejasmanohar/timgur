@@ -16,7 +16,7 @@ client = Orchestrate::Client.new(ENV['API_KEY'])
 
 ### Helper Methods
 helpers do
-  def formatted_number(number)
+  def format_number(number)
     digits = number.gsub(/\D/, '').split(//)
 
     if (digits.length == 11 and digits[0] == '1')
@@ -38,7 +38,7 @@ get '/' do
 end
 
 post '/subscribe' do
-  num = params[:number]
+  num = format_number params[:number]
   if subscribers[num].empty?
     status 200
     subscribers.create(num, {})
