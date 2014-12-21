@@ -38,10 +38,11 @@ get '/' do
 end
 
 post '/subscribe' do
-  num = format_number params[:number]
-  if subscribers[num].empty?
+  num = format_number params[:number].to_s
+  if subscribers[num].nil?
     status 200
     subscribers.create(num, {})
+    'subscribed'
   else
     status 400
     'already subscribed'
