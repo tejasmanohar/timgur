@@ -8,8 +8,3 @@ source 'https://rubygems.org'
 gem 'orchestrate',        '0.10.0'
 gem 'ruby-imgur',         '0.04'
 gem 'sinatra',            '1.4.5'
-
-group :development do
-  gem 'pry',              '0.10.1'
-  gem 'sinatra-contrib',  '1.4.2'
-end
