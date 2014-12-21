@@ -63,4 +63,5 @@ get '/unsubscribe' do
     )
   else
     status 400
+  end
 end
